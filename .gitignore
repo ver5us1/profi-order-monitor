@@ -1,0 +1,42 @@
+# Personal settings and credentials
+.env
+.env.*
+!.env.example
+.envrc
+*.pem
+*.key
+credentials*.json
+secrets/
+
+# Local browser session, response snapshots and processing history
+runtime/
+downloads/
+browser_profile/
+browser-profile/
+state.json
+*.tmp
+*.log
+backups/
+
+# Python environments, build products and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Editor and operating-system metadata
+.idea/
+.vscode/
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini

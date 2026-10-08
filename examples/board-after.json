@@ -1,0 +1,12 @@
+{
+  "data": {
+    "boSearchBoardItems": {
+      "items": [
+        {"id": "demo-order-001"},
+        {"id": "demo-order-002"},
+        {"id": "demo-order-003"},
+        {"id": "demo-order-004"}
+      ]
+    }
+  }
+}

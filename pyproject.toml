@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "profi-order-monitor"
+version = "0.1.0.dev0"
+description = "Personal order monitoring with browser JSON snapshots and Telegram notifications"
+readme = "README.md"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+keywords = ["automation", "playwright", "telegram", "json", "change-detection"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.scripts]
+profi-downloader = "profi_order_monitor.browser.downloader:main"
+profi-monitor = "profi_order_monitor.monitor:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["profi_order_monitor*"]
+namespaces = false
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
